@@ -1,0 +1,57 @@
+
+// navbar-header
+.header{
+  z-index: 99;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color .3s;
+
+  .logo{
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 117px;
+    height: 40px;
+  }
+
+  .header-nav a{
+    text-transform: uppercase;
+    color: $white;
+    padding: 54px 0;
+    transition: padding .3s;
+
+    & + a{
+      margin-left: 30px;
+    }
+
+    &:hover{
+      color: #e7e7e7;
+    }
+  }
+
+  &.scrolled{
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.09);
+
+    .logo{
+      background-image: url(../img/sprite.png);
+      background-position: 0px -40px;
+      width: 117px;
+      height: 40px;
+    }
+
+    .header-nav a{
+      color: rgba(0,0,0,.7);
+      padding: 20px 0;
+
+      &:hover{
+        color: rgba(0,0,0,.7);
+      }
+    }
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+  
+}

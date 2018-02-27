@@ -1,0 +1,127 @@
+/*RESET START*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: #8b8e94;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #E4E4E4; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none; }
+
+textarea {
+  resize: vertical; }
+
+button {
+  cursor: pointer; }
+
+label {
+  margin-bottom: 0; }
+
+/*RESET END*/
+.white {
+  color: #fff; }
+
+.orange {
+  color: #FFA33E; }
+
+.fixed {
+  position: fixed; }
+
+.top {
+  top: 0; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.justify-right {
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+      -ms-flex-pack: right;
+          justify-content: right; }
+
+.justify-sp-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto; }
+
+.header {
+  z-index: 99;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s; }
+  .header .logo {
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 117px;
+    height: 40px; }
+  .header .header-nav a {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 54px 0;
+    -webkit-transition: padding .3s;
+    -o-transition: padding .3s;
+    transition: padding .3s; }
+    .header .header-nav a + a {
+      margin-left: 30px; }
+    .header .header-nav a:hover {
+      color: #e7e7e7; }
+  .header.scrolled {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09); }
+    .header.scrolled .logo {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -40px;
+      width: 117px;
+      height: 40px; }
+    .header.scrolled .header-nav a {
+      color: rgba(0, 0, 0, 0.7);
+      padding: 20px 0; }
+      .header.scrolled .header-nav a:hover {
+        color: rgba(0, 0, 0, 0.7); }
+  .header .mobile-menu {
+    display: none; }
