@@ -50,8 +50,142 @@
     }
   }
 
-  .mobile-menu{
+  .mobile-nav,
+  .mobile-btn{
     display: none;
   }
   
+}
+
+@media (max-width: 767px){
+  .header{
+    background-color: #fff;
+
+    .navbar{
+      position: relative;
+
+      .header-nav{
+        display: none;
+      }
+
+      .logo{
+        background-image: url(../img/sprite.png);
+        background-position: 0px -40px;
+        width: 117px;
+        height: 40px;
+        margin: 4px 0;
+      }
+
+      .mobile-btn{
+        display: flex;
+        width: 42px;
+        height: 32px;
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5px;
+
+        & span{
+          width: 22px;
+          height: 2px;
+          background-color: rgb(139, 142, 148);
+          display: flex;
+          transition: all .3s linear;
+        }
+      }
+
+      .mobile-nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-transform: uppercase;
+        background-color: #fff;
+        padding: 10px 0;
+        margin: 0 -15px;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+
+        & a{
+          padding: 15px;
+          color: rgba(0,0,0,.7);
+          width: 100%;
+          line-height: 15px;
+        }
+
+        & a + a{
+          margin-left: 0;
+        }
+      }
+
+    }
+
+
+  }
+}
+
+// Slider
+.slider{
+
+  .slick-arrow{
+    z-index: 10;
+    opacity: .7;
+    background-color: rgba(0,0,0,.5);
+    width: 60px;
+    height: 60px;
+
+    &:hover{
+      background-color: rgba(0,0,0,.8);
+      opacity: .9;
+    }
+
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 30px;
+    }
+  }
+
+  .slick-next{
+    right: 0;
+
+    &:before{
+      content: "\f105";
+    }
+  }
+
+  .slick-prev{
+    left: 0;
+
+    &:before{
+      content: "\f104";
+    }
+  }
+
+  .slick-dots{
+    bottom: 15px;
+
+    & li.slick-active{
+
+      & button:before{
+        opacity: 1;
+      }
+    }
+
+    & li{
+      margin: 0 2px;
+
+      & button{
+        padding: 3px;
+
+        &:before{
+          color: $white;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
 }
