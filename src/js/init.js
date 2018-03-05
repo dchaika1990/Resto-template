@@ -38,13 +38,13 @@ $(document).ready(function () {
         adaptiveHeight: true
     });
 
-    $('.slick-arrow, .slick-dots').hide();
+    $('.slick-arrow').hide();
     $('.slider').hover(
         function () {
-            $('.slick-arrow, .slick-dots').stop().fadeIn();
+            $('.slick-arrow').stop().fadeIn();
         },
         function () {
-            $('.slick-arrow, .slick-dots').stop().fadeOut();
+            $('.slick-arrow').stop().fadeOut();
         }
     );
 

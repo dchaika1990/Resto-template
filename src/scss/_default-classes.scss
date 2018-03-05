@@ -4,6 +4,9 @@
 .orange{
   color: $orange;
 }
+.black{
+  color: $black;
+}
 .fixed{
   position: fixed;
 }
@@ -19,7 +22,13 @@
 .justify-sp-between{
   justify-content: space-between;
 }
+.justify-center{
+  justify-content: center;
+}
 .align-center{
   align-items: center;
+}
+.center{
+  text-align: center;
 }
 
