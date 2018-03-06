@@ -568,26 +568,26 @@ a.links {
           color: #fff;
           font-size: 10px; }
 
-.welcome .title {
+.specialties .default-section .title {
   margin-top: 30px; }
-  .welcome .title span:last-of-type {
+  .specialties .default-section .title span:last-of-type {
     color: #000; }
-  .welcome .title p {
+  .specialties .default-section .title p {
     margin-top: 50px;
     color: inherit;
     font-size: 15px;
     letter-spacing: 0.3em; }
 
-.welcome .text {
+.specialties .default-section .text {
   padding: 0 30px;
   margin-bottom: 30px; }
 
-.specialties {
-  background: url("../img/hero_bg_2.jpg") no-repeat left top/cover; }
-  .specialties .title {
+.specialties .section-bg {
+  background: url("../img/hero_bg_2.jpg") no-repeat fixed center/cover; }
+  .specialties .section-bg .title {
     margin-top: 250px; }
 
-.menu .menu-container {
+.menu .default-section .menu-container {
   width: 100%;
   margin-top: -13%;
   margin-bottom: -13%;
@@ -599,26 +599,27 @@ a.links {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   position: relative;
-  background-color: #fff; }
-  .menu .menu-container .half-section {
+  background-color: #fff;
+  z-index: 5; }
+  .menu .default-section .menu-container .half-section {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .menu .menu-container .half-section:nth-of-type(3) .half-section:first-child, .menu .menu-container .half-section:nth-of-type(4) .half-section:first-child {
+    .menu .default-section .menu-container .half-section:nth-of-type(3) .half-section:first-child, .menu .default-section .menu-container .half-section:nth-of-type(4) .half-section:first-child {
       -webkit-box-ordinal-group: 3;
       -webkit-order: 2;
           -ms-flex-order: 2;
               order: 2; }
-    .menu .menu-container .half-section:nth-of-type(3) .half-section:last-child, .menu .menu-container .half-section:nth-of-type(4) .half-section:last-child {
+    .menu .default-section .menu-container .half-section:nth-of-type(3) .half-section:last-child, .menu .default-section .menu-container .half-section:nth-of-type(4) .half-section:last-child {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1; }
-    .menu .menu-container .half-section .menu-img {
+    .menu .default-section .menu-container .half-section .menu-img {
       height: 267px;
       width: 100%; }
-    .menu .menu-container .half-section .menu-text {
+    .menu .default-section .menu-container .half-section .menu-text {
       padding: 40px;
       text-align: center;
       display: -webkit-box;
@@ -634,21 +635,26 @@ a.links {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .menu .menu-container .half-section .menu-text .menu-text__title {
+      .menu .default-section .menu-container .half-section .menu-text .menu-text__title {
         margin-bottom: 10px;
         font-size: 18px;
         text-transform: uppercase;
         color: #000; }
-      .menu .menu-container .half-section .menu-text .menu-text__content {
+      .menu .default-section .menu-container .half-section .menu-text .menu-text__content {
         margin-bottom: 30px; }
-      .menu .menu-container .half-section .menu-text .menu-text__price {
+      .menu .default-section .menu-container .half-section .menu-text .menu-text__price {
         font-size: 20px;
         color: #FFA33E; }
-    .menu .menu-container .half-section:first-child .menu-img {
+    .menu .default-section .menu-container .half-section:first-child .menu-img {
       background: url("../img/img_square_1.jpg") no-repeat center/cover; }
-    .menu .menu-container .half-section:nth-of-type(2) .menu-img {
+    .menu .default-section .menu-container .half-section:nth-of-type(2) .menu-img {
       background: url("../img/img_square_2.jpg") no-repeat center/cover; }
-    .menu .menu-container .half-section:nth-of-type(3) .menu-img {
+    .menu .default-section .menu-container .half-section:nth-of-type(3) .menu-img {
       background: url("../img/img_square_3.jpg") no-repeat center/cover; }
-    .menu .menu-container .half-section:nth-of-type(3) .menu-img {
+    .menu .default-section .menu-container .half-section:nth-of-type(3) .menu-img {
       background: url("../img/img_square_4.jpg") no-repeat center/cover; }
+
+.menu .section-bg {
+  background: url("../img/hero_bg_4.jpg") no-repeat fixed center/cover; }
+  .menu .section-bg .title {
+    margin-top: 250px; }
