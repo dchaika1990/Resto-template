@@ -48,4 +48,17 @@ $(document).ready(function () {
         }
     );
 
+
+    //Datepicker
+    $('#date').datepicker({
+        'format': 'yyyy-m-d',
+        'autoclose': true
+    });
+
+    //Timepicker
+    $('#time').timepicker({
+        'showDuration': true,
+        'timeFormat': 'g:ia'
+    });
+
 });

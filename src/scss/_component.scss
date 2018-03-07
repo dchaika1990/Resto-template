@@ -36,6 +36,10 @@
   width: 50%;
 }
 
+.event{
+  padding: 0 15px;
+}
+
 //Title
 
 .title{
@@ -94,4 +98,55 @@ a.links{
   }
 
 
+}
+
+//Forms
+.form-field{
+  width: 100%;
+  position: relative;
+
+  i{
+
+  }
+
+  .form-control{
+    height: 46px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    line-height: 1.42;
+    background-color: $white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all .15s ease-in-out;
+
+    &:active, &:focus{
+      border-color: $orange;
+    }
+  }
+}
+
+//btn
+.btn{
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  border: 1px solid $orange;
+
+  &.btn-primary{
+    background-color: $orange;
+    color: $white;
+
+    &:hover{
+      background-color: $lightOrange;
+    }
+  }
 }

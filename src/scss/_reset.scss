@@ -23,6 +23,11 @@ ul, ol{
 a{
   color: inherit;
   text-decoration: none;
+  transition: color .3s linear;
+
+  &:hover{
+    color: $orange;
+  }
 }
 img{
   max-width: 100%;
