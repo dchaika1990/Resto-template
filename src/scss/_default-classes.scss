@@ -1,3 +1,4 @@
+//Color
 .white{
   color: $white;
 }
@@ -7,12 +8,27 @@
 .black{
   color: $black;
 }
+
+//Position
 .fixed{
   position: fixed;
 }
 .top{
   top: 0;
 }
+
+//Text-align
+.center{
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+
+//Flex
 .flex-container{
   display: flex;
 }
@@ -27,9 +43,6 @@
 }
 .align-center{
   align-items: center;
-}
-.center{
-  text-align: center;
 }
 .flex-wrap{
   flex-wrap: wrap;
