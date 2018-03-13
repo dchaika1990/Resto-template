@@ -3,7 +3,7 @@
 .container{
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 -15px;
+  padding: 0 15px;
 }
 
 .row{
@@ -19,6 +19,7 @@
 .section-bg{
   height: 600px;
   position: relative;
+  padding-top: 250px;
 
   &:before{
     content: '';
@@ -40,10 +41,22 @@
   padding: 0 15px;
 }
 
+@media (max-width: 767px) {
+  .default-section{
+    padding: 3em 0;
+  }
+
+  .section-bg{
+    height: 300px;
+    padding-top: 150px;
+  }
+}
+
 //Title
 
 .title{
   z-index: 10;
+
   & span{
     display: block;
   }
@@ -68,6 +81,19 @@
   & p{
     font-size: 20px;
     color: rgba(255,255,255,.8);
+  }
+}
+
+@media (max-width: 767px) {
+  .title{
+
+    & span:first-child{
+      font-size: 70px;
+    }
+
+    & span:last-of-type{
+      font-size: 40px
+    }
   }
 }
 
