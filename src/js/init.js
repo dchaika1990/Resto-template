@@ -11,6 +11,7 @@ $(document).ready(function () {
     $(window).change(function () {
        console.log($(this).width())
     });
+    // Navbar btn
     $('.mobile-btn').on('click', function () {
         if ( $('.mobile-nav').is(':hidden') ){
             $('.mobile-nav').slideDown(500).css('display','flex');
@@ -28,6 +29,11 @@ $(document).ready(function () {
     });
 
     if ( $(window).width() > 767 ) $('.mobile-nav').css('display','none');
+
+    //Navbar active link
+    $(function () {
+        $(".header").changeActiveNav();
+    });
 
     //Slider
     $('.slider').slick({
@@ -59,6 +65,87 @@ $(document).ready(function () {
     $('#time').timepicker({
         'showDuration': true,
         'timeFormat': 'g:ia'
+    });
+
+    //Loader
+    $(window).load(function() {
+        $("#loading").delay(2000).fadeOut(500);
+        $("#loading-center").click(function() {
+            $("#loading").fadeOut(500);
+        })
+    });
+
+    //Validate
+    $("#form-reservation").validate({
+        rules: {
+            people: 'required',
+            date: {
+                required: true,
+            },
+            time: {
+                required: true,
+            },
+            name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true
+            }
+        },
+        messages: {
+            people: {
+                required: 'This is required field'
+            },
+            date: {
+                required: 'This is required field',
+            },
+            time: {
+                required: 'This is required field',
+            },
+            name: {
+                required: 'This is required field',
+            },
+            email: {
+                required: 'This is required field',
+                email: 'The example is test@test.com'
+            },
+            phone: {
+                required: 'This is required field'
+            }
+        }
+    });
+
+    $('#form-contact').validate({
+        rules: {
+            name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true,
+                minlength: 50
+            }
+        },
+        messages: {
+            name: {
+                required: 'This is required field',
+            },
+            email: {
+                required: 'This is required field',
+                email: 'The example is test@test.com'
+            },
+            message: {
+                required: 'This is required field',
+                minlength: 'It must be min 50 letters'
+            }
+        }
     });
 
 });

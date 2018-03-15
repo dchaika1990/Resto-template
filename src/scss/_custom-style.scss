@@ -49,8 +49,9 @@
       color: rgba(0,0,0,.7);
       padding: 20px 0;
 
-      &:hover{
-        color: rgba(0,0,0,.7);
+      &:hover,
+      &.active{
+        color: $lightOrange;
       }
     }
   }
@@ -567,6 +568,7 @@
     }
 
     .btn-group{
+      margin-top: 10px;
       flex-grow: 1;
       text-align: center;
       padding: 0 15px;
@@ -690,7 +692,7 @@
     padding: 0 15px;
 
     .form-group{
-      margin-bottom: 15px;
+      margin-bottom: 25px;
 
       .form-field{
 
