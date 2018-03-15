@@ -4461,6 +4461,39 @@ a.links {
     .btn.btn-primary:hover {
       background-color: #ffa848; }
 
+.btn-up {
+  opacity: 0;
+  position: fixed;
+  right: -50px;
+  bottom: 15px;
+  height: 45px;
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+  .btn-up i {
+    font-size: 25px; }
+  .btn-up:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #FFA33E;
+    cursor: pointer; }
+
 label.error {
   position: absolute;
   top: 100%;
@@ -4659,6 +4692,8 @@ label.error {
           color: rgba(0, 0, 0, 0.7);
           width: 100%;
           line-height: 15px; }
+          .header .navbar .mobile-nav a:hover, .header .navbar .mobile-nav a.active {
+            color: #ffa848; }
         .header .navbar .mobile-nav a + a {
           margin-left: 0; } }
 
